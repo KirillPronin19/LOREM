@@ -1,0 +1,395 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x:hidden;
+}
+
+/* Первый блок  */
+.first-grid-container {
+    height: 1017px;
+    background-color: rgba(34, 34, 34, 1);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+/* Шапка сайта (внутри первой колонки грид элемента) */
+
+/* Логотип  */
+.logo {
+    font-size: 2.5vw;
+    margin-left: 15%;
+    margin-top: 3%;
+
+    font-family: "Prata", serif;
+    font-weight: 200;
+    color: white;
+}
+/* Навигационная панель  */
+.nav-bar-grid-container {
+    width: 40%;
+    margin-left: 50%;
+    margin-top: -3%;
+
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    color: white;
+    
+}
+
+.nav-bar-grid-item {
+    text-align: center;
+    font-size: 0.7vw;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-style: italic;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+}
+
+.nav-bar-grid-item:hover {
+    color: #afafaf;
+    transform: scale(1.1);
+}
+
+/* содержимое блока  */
+.first-grid-container h2 {
+    font-size: 4vw;
+    color: white;
+    font-family: "Prata", serif;
+    font-weight: 200;
+
+    margin-left: 15%;
+    margin-top: 20%;
+}
+
+.first-grid-container p {
+    font-size: 2vw;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif
+    font-weight: 200;
+
+    margin-left: 15%;
+    margin-top: -5%;
+}
+
+/* прайс лист  */
+.price-list li {
+    color: white;
+    font-size: 1.5vw;
+    margin-left: 16%;
+    margin-bottom: 2%;
+}
+
+.price-list-block ul {
+    list-style-image: url(/img/tick_ssoz1sn9kkb8\ 2.png);
+    
+}
+
+.other-style {
+    font-family: "Prata", serif;
+    font-size: 2vw;
+}
+
+/* белая кнопка  */
+.white-button {
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: white;
+    width: 8%;
+    padding: 2%;
+    margin-left: 15%;
+    transition: all .3 ease-in-out;
+}
+
+.white-button:hover {
+    transform: scale(1.1);
+}
+
+.white-button a {
+    text-decoration: none;
+    font-size: 1.5vw;
+    color: black; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* часть с картинкой  */
+
+.first-grid-item img{
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+/* второй блок с фотографиями по бокам */
+.second-block {
+    height: 920px;
+    background-color: rgba(40, 40, 41, 1);
+}
+
+.three-grid-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 5%;
+    width: 105%;
+}
+
+.three-grid-block-list {
+    color: white;
+    padding-top: 8%;
+    margin-left: 5%;
+    font-size: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+}
+
+.strange-image {
+    margin-top: 20%;
+}
+
+/* кнопка между фоток  */
+/* .second-button {
+    width: 80%;
+    height: 6vh;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 10%;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: white;
+    
+}
+
+#intro-second-button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    font-weight: 600;
+} */
+
+#intro-second-button {
+    width: 80%;
+    background-color: white;
+    color: #282829;
+    border: none;
+    padding: 20px;
+    margin-left: 5%;
+    margin-top: 5%;
+    /* padding-right: 50%; */
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2vw;
+    transition: all .2s ease-in-out;
+}
+
+#intro-second-button:hover{
+    background-color: #282829;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+/* блок с обратной связью */
+
+.feedback-block {
+    background-color: rgba(40, 40, 41, 1);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.white-block-in-feedback {
+    height: 60vh;
+    width: 80vw;
+    /* margin-left: 10% */
+    
+    border-radius: 25px;
+    background-color: white;
+}
+
+/* грид контейнер с контентом */
+
+.feedback-grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+/* форма обратной связи  */
+.feed-parag {
+    font-size: 3vw;
+    font-family: "Prata", serif;
+    color: #38535D;
+    margin-left: 10%;
+}
+
+.form-container {
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-left: 10%;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    padding-right: 40%;
+}
+
+.input-group input[type=text],
+.input-group input[type=email] {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #545454;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.checkbox-group input[type=checkbox] {
+    margin-right: 3%;
+}
+
+#submit-btn {
+    width: 100%;
+    background-color: #282829;
+    color: white;
+    border: none;
+    padding: 20px;
+    /* padding-right: 50%; */
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all .2s ease-in-out;
+}
+
+#submit-btn:hover {
+    background-color: white;
+    color: #282829;
+    border: 1px solid #282829;
+}
+
+/* часть с двойной фотографией  */
+
+.feedback-grid-item img {
+    position: absolute;
+    height: 60%;
+    left: 62%;
+}
+
+.second-photo-block img {
+    position: absolute;
+    margin-left: -5%;
+    margin-top: -4.5%;
+    height: 70%;
+}
+
+/* нижняя навигация  */
+
+.under-nav {
+    height: 100px;
+    border-top: 2px solid #D5C9BE;
+    border-bottom: 2px solid #D5C9BE;
+    background-color: #282829;
+}
+
+.under-nav-grid {
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 2%;
+
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    color: white;
+    
+}
+
+.under-nav-grid-item {
+    text-align: center;
+    font-size: 0.7vw;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+/* гридовый подвал  */
+
+footer {
+    height: 230px;
+    background-color: #282829;
+}
+
+.footer-grid-container {
+    height: 230px;
+    padding-top: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    background-color: #282829;
+    color: white;
+
+    text-align: center;
+}
+
+.footer-logo {
+    text-transform: uppercase;
+    font-family: "Prata", serif;
+    font-size: 2vw;
+}
+
+.Copyright {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* грид контейнер с иконками  */
+
+.icons-grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+    width: 60%;
+    margin-left: 25%;
+}
+
+.policy {
+    color: #D5C9BE;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.order-button button {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 30%;
+    background-color: white;
+    color: #747372;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.3vw;
+    transition: all .2s ease-in-out;
+}
+
+.order-button button:hover {
+    background-color: #282829;
+    color: #D5C9BE;
+    border: 1px solid white;
+}
+
+.Use {
+    color: #D5C9BE;
+    font-family: Arial, Helvetica, sans-serif;
+}
